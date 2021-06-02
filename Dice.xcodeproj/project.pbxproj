@@ -13,6 +13,11 @@
 		90F9CDFC266769E8005A6BCD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F9CDFB266769E8005A6BCD /* Preview Assets.xcassets */; };
 		90F9CDFE266769E8005A6BCD /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F9CDFD266769E8005A6BCD /* Persistence.swift */; };
 		90F9CE01266769E8005A6BCD /* Dice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 90F9CDFF266769E8005A6BCD /* Dice.xcdatamodeld */; };
+		90F9CE0926676CCF005A6BCD /* RollDiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F9CE0826676CCF005A6BCD /* RollDiceView.swift */; };
+		90F9CE0B26678AE6005A6BCD /* DiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F9CE0A26678AE6005A6BCD /* DiceModel.swift */; };
+		90F9CE0D26678F36005A6BCD /* DiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F9CE0C26678F36005A6BCD /* DiceViewModel.swift */; };
+		90F9CE0F2667A4A0005A6BCD /* DiceResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F9CE0E2667A4A0005A6BCD /* DiceResults.swift */; };
+		90F9CE112667AA07005A6BCD /* ConfigureDice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F9CE102667AA07005A6BCD /* ConfigureDice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		90F9CDFD266769E8005A6BCD /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		90F9CE00266769E8005A6BCD /* Dice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dice.xcdatamodel; sourceTree = "<group>"; };
 		90F9CE02266769E8005A6BCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90F9CE0826676CCF005A6BCD /* RollDiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollDiceView.swift; sourceTree = "<group>"; };
+		90F9CE0A26678AE6005A6BCD /* DiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceModel.swift; sourceTree = "<group>"; };
+		90F9CE0C26678F36005A6BCD /* DiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceViewModel.swift; sourceTree = "<group>"; };
+		90F9CE0E2667A4A0005A6BCD /* DiceResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceResults.swift; sourceTree = "<group>"; };
+		90F9CE102667AA07005A6BCD /* ConfigureDice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureDice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,11 @@
 			children = (
 				90F9CDF4266769E4005A6BCD /* DiceApp.swift */,
 				90F9CDF6266769E4005A6BCD /* ContentView.swift */,
+				90F9CE0E2667A4A0005A6BCD /* DiceResults.swift */,
+				90F9CE102667AA07005A6BCD /* ConfigureDice.swift */,
+				90F9CE0826676CCF005A6BCD /* RollDiceView.swift */,
+				90F9CE0A26678AE6005A6BCD /* DiceModel.swift */,
+				90F9CE0C26678F36005A6BCD /* DiceViewModel.swift */,
 				90F9CDF8266769E8005A6BCD /* Assets.xcassets */,
 				90F9CDFD266769E8005A6BCD /* Persistence.swift */,
 				90F9CE02266769E8005A6BCD /* Info.plist */,
@@ -145,8 +160,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				90F9CDFE266769E8005A6BCD /* Persistence.swift in Sources */,
+				90F9CE0D26678F36005A6BCD /* DiceViewModel.swift in Sources */,
+				90F9CE112667AA07005A6BCD /* ConfigureDice.swift in Sources */,
 				90F9CDF7266769E4005A6BCD /* ContentView.swift in Sources */,
+				90F9CE0F2667A4A0005A6BCD /* DiceResults.swift in Sources */,
+				90F9CE0B26678AE6005A6BCD /* DiceModel.swift in Sources */,
 				90F9CE01266769E8005A6BCD /* Dice.xcdatamodeld in Sources */,
+				90F9CE0926676CCF005A6BCD /* RollDiceView.swift in Sources */,
 				90F9CDF5266769E4005A6BCD /* DiceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

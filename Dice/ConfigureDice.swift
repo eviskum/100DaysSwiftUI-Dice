@@ -8,13 +8,21 @@
 import SwiftUI
 
 struct ConfigureDice: View {
+    @ObservedObject var rollDiceVM: DiceViewModel
+    
+    let dices = ["4", "6", "10", "12", "20", "100"]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Picker("Vælg terning", selection: $rollDiceVM.currentDice.diceSizeText) {
+            ForEach(dices, id: \.self) {
+                Text($0)
+            }
+        }
     }
 }
 
 struct ConfigureDice_Previews: PreviewProvider {
     static var previews: some View {
-        ConfigureDice()
+        ConfigureDice(rollDiceVM: DiceViewModel())
     }
 }

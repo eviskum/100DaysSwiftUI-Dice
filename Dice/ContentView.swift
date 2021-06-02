@@ -10,6 +10,8 @@ import CoreData
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
+    
+    @StateObject var rollDiceVM = DiceViewModel()
 
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
@@ -17,7 +19,27 @@ struct ContentView: View {
     private var items: FetchedResults<Item>
 
     var body: some View {
-        List {
+        TabView {
+            RollDiceView(rollDiceVM: rollDiceVM)
+                .tabItem {
+                    Image(systemName: "questionmark.diamond")
+                    Text("Roll Dice")
+                }
+
+            DiceResults(rollDiceVM: rollDiceVM)
+                .tabItem {
+                    Image(systemName: "checkmark.circle")
+                    Text("Results")
+                }
+
+            ConfigureDice(rollDiceVM: rollDiceVM)
+                .tabItem {
+                    Image(systemName: "checkmark.circle")
+                    Text("Results")
+                }
+        }
+        
+/*        List {
             ForEach(items) { item in
                 Text("Item at \(item.timestamp!, formatter: itemFormatter)")
             }
@@ -31,7 +53,7 @@ struct ContentView: View {
             Button(action: addItem) {
                 Label("Add Item", systemImage: "plus")
             }
-        }
+        } */
     }
 
     private func addItem() {

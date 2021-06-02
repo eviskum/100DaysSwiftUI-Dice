@@ -8,13 +8,17 @@
 import SwiftUI
 
 struct DiceResults: View {
+    @ObservedObject var rollDiceVM: DiceViewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            List(rollDiceVM.diceResults, id: \.self) { diceResult in
+                Text("\(diceResult)")
+            }
     }
 }
 
 struct DiceResults_Previews: PreviewProvider {
     static var previews: some View {
-        DiceResults()
+        DiceResults(rollDiceVM: DiceViewModel())
     }
 }
